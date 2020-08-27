@@ -23,16 +23,19 @@ public class MapBody {
     @Test
     public void PostMap() {
         Map<String, Object> postmap = new HashMap<>();
-        postmap.put("name", "AyseMap");
+        postmap.put("name", "Aysegul");
         postmap.put("gender", "Female");
-        postmap.put("phone", 3452617891L);
+        postmap.put("phone", 3452617837L);
 
-        given().log().all()
+        given()
+                .log().all()
                 .contentType(ContentType.JSON)
                 .body(postmap)
-        .when().post("/api/spartans").
-        then().statusCode( is(201));
-
+        .when()
+                .post("/api/spartans").
+        then().
+                log().all().statusCode( is(201));
+          //body("data.name",is("Aysegul");
 
     }
 }

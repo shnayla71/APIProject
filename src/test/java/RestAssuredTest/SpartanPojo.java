@@ -1,9 +1,6 @@
-package APItest;
+package RestAssuredTest;
 
-public class Spartan {
-
-
-   private  int id;
+public class SpartanPojo {
     private String name;
     private String gender;
     private long phone;
@@ -11,31 +8,27 @@ public class Spartan {
 
     @Override
     public String toString() {
-        return "Spartan{" +
-                "id=" + id +
+        return "Spartan{"+
+
                 ", name='" + name + '\'' +
                 ", gender='" + gender + '\'' +
                 ", phone=" + phone +
                 '}';
     }
-    public Spartan(){}
+    public SpartanPojo(){}
 
-    public Spartan(int id, String name, String gender, long phone){
-        this.id=id;
+    public SpartanPojo( String name, String gender, long phone){
+
         this.name=name;
         this.gender=gender;
         this.phone=phone;
 
     }
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
-    public String getName(String name) {
-        return this.name;
+
+
+    public String getName() {
+        return name;
     }
 
     public void setName(String name) {
@@ -57,5 +50,4 @@ public class Spartan {
     public void setPhone(long phone) {
         this.phone = phone;
     }
-
 }
