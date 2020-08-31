@@ -1,4 +1,4 @@
-package RestAssuredTest;
+package RestAssuredTest.day05;
 
 public class SpartanPojo {
     private String name;

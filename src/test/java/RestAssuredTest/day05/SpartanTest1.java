@@ -1,4 +1,4 @@
-package RestAssuredTest;
+package RestAssuredTest.day05;
 
 import static io.restassured.RestAssured.*;
 import static org.hamcrest.core.Is.is;

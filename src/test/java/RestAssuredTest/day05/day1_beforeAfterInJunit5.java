@@ -1,4 +1,4 @@
-package RestAssuredTest;
+package RestAssuredTest.day05;
 
 import org.junit.jupiter.api.*;
 

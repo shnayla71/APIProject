@@ -4,7 +4,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.*;
 
-public class dataUtility {
+public class DB_Utility {
     private static Connection conn;
     private static ResultSet rs;
     private static Statement stmnt;
@@ -236,4 +236,4 @@ public class dataUtility {
     }
 }
 
-}
+

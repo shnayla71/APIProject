@@ -1,12 +1,10 @@
-package RestAssuredTest;
+package RestAssuredTest.day05;
 
 
 import com.github.javafaker.Faker;
-import io.restassured.RestAssured;
 import io.restassured.http.ContentType;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
-import org.testng.annotations.BeforeClass;
 
 import java.util.HashMap;
 import java.util.LinkedHashMap;
