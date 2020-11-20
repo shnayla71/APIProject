@@ -234,6 +234,28 @@ public class DB_Utility {
             throw new RuntimeException("Failed to close database connection!");
         }
     }
+
+    public static Map<String,String> getRowMap( int rowNum ){
+
+        Map<String,String> rowMap =  new LinkedHashMap<>() ; //new HashMap<>();
+        try{
+
+            rs.absolute(rowNum);
+
+            ResultSetMetaData rsmd = rs.getMetaData();
+            for (int colNum = 1; colNum <= getColumnCNT() ; colNum++) {
+                String colName = rsmd.getColumnName( colNum );
+                String colValue= rs.getString( colNum ) ;
+                rowMap.put(colName, colValue);
+            }
+            rs.beforeFirst();
+
+        }catch (SQLException e){
+            System.out.println("ERRROR AT ROW MAP FUNCTION");
+        }
+
+        return rowMap;
+    }
 }
 
 

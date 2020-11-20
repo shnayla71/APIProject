@@ -25,7 +25,7 @@ public class SpartanTestPojo {
         System.out.println(spartan1.toString());
         assertEquals(spartan1.getId(),15);
         assertEquals(spartan1.getGender(),"Female");
-        assertEquals(spartan1.getName("AysePojo"),"Meta");
+        assertEquals(spartan1.getName(),"Meta");
     }
 
     @Test

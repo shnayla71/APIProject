@@ -34,7 +34,7 @@ public class Spartan {
     public void setId(int id) {
         this.id = id;
     }
-    public String getName(String name) {
+    public String getName() {
         return this.name;
     }
 
